@@ -54,8 +54,18 @@ This work emphasizes **cross-domain collaboration** between bioinformatics and d
 
 ---
 
+## 💬 Acknowledgements
+This project uses publicly available data and tools from:
+- **HackBio**
+- **Protein Data Bank (PDB)**
+- **SWISS-MODEL**
+- **AlphaFold**
+- **PyMOL**
+
+---
+
 ## 📈 Current Status
 This project is **in progress**, with ongoing experimentation on multiple cancer subtypes.  
 Future iterations aim to integrate **multi-omics data** for improved biomarker prediction.
 
---
+---
