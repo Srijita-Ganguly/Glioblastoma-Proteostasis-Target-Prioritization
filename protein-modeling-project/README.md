@@ -22,7 +22,7 @@ In clinical oncology, p53 status is an important biomarker for cancer prognosis 
 ---
 
 ### 2. Downloading the Protein Structure
-- PDB website(https://www.rcsb.org/) 
+- PDB website(https://www.rcsb.org/)  
 
 ---
 
@@ -41,7 +41,7 @@ Downloading the predicted model and preparing it for visualization.
 
 ### 5. Visualize the Protein
 Visualizing both structures using:
-- [PyMOL](https://pymol.org/2/)
+- PyMOL
 
 Comparing:
 - Secondary structure elements  
@@ -62,7 +62,17 @@ The **structural and functional features** of the protein:
 - Accuracy of each modeling technique  
 - Coverage of the protein structure  
 - Functional insights derived  
-- Advantages and limitations of each method  
+- Advantages and limitations of each method
+
+## 📂 Files
+| File | Description |
+|------|--------------|
+| `protein_sequence.fasta` | FASTA sequence of p53 form RCSB-PDB |
+| `4D1M_p53structure.pdb` | PDB structure file of p53 from RCSB-PDB |
+| `Swiss_model_p53.pdb` | Structure predicted using SWISS-MODEL |
+| `AlphaFold_model_p53.pdb` | Structure predicted using AlphaFold | 
+| `visualization_screenshots/` | PyMOL screenshots |
+| `report.pdf` | Comparative analysis and discussion | 
 
 Conclusion on which method (Homology Modeling or AlphaFold) produced a more accurate and biologically meaningful structure.
 
