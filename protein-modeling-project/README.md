@@ -64,8 +64,8 @@ The **structural and functional features** of the protein:
 - Functional insights derived  
 - Advantages and limitations of each method
 
-## 📂 Files
-| File | Description |
+## 📂 /data
+| File name | Description |
 |------|--------------|
 | `protein_sequence.fasta` | FASTA sequence of p53 form RCSB-PDB |
 | `4D1M_p53structure.pdb` | PDB structure file of p53 from RCSB-PDB |
