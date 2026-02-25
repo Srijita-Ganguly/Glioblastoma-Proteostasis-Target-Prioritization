@@ -1,71 +1,64 @@
-<h1>Clinical Oncology: Biomarker Discovery & Machine Learning Pipeline</h1>
-
-This repository documents an **ongoing independent research project** focused on discovering potential cancer biomarkers through the integration of **bioinformatics** and **machine learning** techniques.  
-The workflow is a full pipeline commonly used in translational cancer research — combining statistical, computational, and biological perspectives.
+<h1>Glioblastoma Proteostasis Target Prioritization</h1>
+Proteogenomic Identification of Proteostasis Dependencies in Glioblastoma
 
 ---
 
-## 🚀 Project Overview
+This project uses quantitative tumor proteomics as the primary discovery layer to identify dysregulated proteostasis pathways and prioritize protein-level therapeutic vulnerabilities. Transcriptomic and dependency data are used only for orthogonal validation.
+This repository documents an **ongoing independent research project**. 
 
-The objective of this project is to identify **potential cancer biomarkers** from a given dataset using **differential expression analysis** and **machine learning models**.  
-This work emphasizes **cross-domain collaboration** between bioinformatics and data science to drive meaningful biological insights.
-
+Which proteostasis-associated proteins represent essential and therapeutically actionable dependencies in glioblastoma?
 ---
 
-### A. Workflow Outline
-
-#### Step 1 — Selection of Cancer Type / Subtype
-- Choosing any target cancer dataset (publicly available, e.g., TCGA, GEO, etc.).
-
-#### Step 2 — Data Preparation
-- Performing data cleaning and preprocessing.
-- Handleing missing values and normalize gene expression data.
-- Reduceing data to a maximum of *n* samples for the primary analysis.
-- Documenting dataset characteristics and preprocessing decisions.
-
-#### Step 3 — Biomarker Discovery
-- Conducting **Differential Expression Analysis (DEA)** to identify significant genes.
-- Performing **Functional Enrichment Analysis** (e.g., GO, KEGG).
-
-#### Step 4 — Machine Learning Modeling
-- Prepareing biomarker features for machine learning.
-- Performing feature selection.
-- Training and evaluateing models:
-  - **k-Nearest Neighbors (kNN)**
-  - **Random Forest Classifier** 
-
-#### Step 5 — Final Report & Interpretation
-- Compiling results from data collection, preprocessing, DEA, and ML analysis.
-- Creating a comprehensive notebook/report that includes:
-  1. **Introduction** — Cancer type background and research motivation.  
-  2. **Data & Methods** — Dataset overview and preprocessing details.  
-  3. **Analysis Pipeline** — Biomarker discovery and machine learning approach.  
-  4. **Results** — Identified biomarkers and model outcomes.  
-  5. **Visualization** — Figures and plots for effective result communication.  
-  6. **Conclusion & Future Work** — Insights, challenges, and next steps.
+## Data Sources
+- Clinical Proteomic Tumor Analysis Consortium — quantitative proteomics
+- The Cancer Genome Atlas — transcriptomics and clinical data
+- DepMap — CRISPR gene dependency scores
 
 ---
+## Analytical Strategy
 
-## 🧠 Technologies Usage
-- **Python**, **R**
-- **Pandas**, **NumPy**, **scikit-learn**
-- **Seaborn**, **Matplotlib**, **Plotly**
-- **BioPython**, **DESeq2** 
+### Proteome-Level Dysregulation
+- Differential protein abundance analysis
+- Effect size prioritization
+- Variability assessment
+- Missingness filtering
+- Proteome-wide statistical correction
+
+### Proteostasis Network Enrichment
+Focused analysis of:
+- Heat shock proteins
+- Co-chaperones
+- UPR mediators
+- Proteasome components
+- ER stress regulators
+Pathway enrichment using protein-level data
+
+### Protein–Transcript Concordance
+Evaluate:
+- Protein–mRNA correlation
+- Identification of post-transcriptionally regulated proteins
+- Proteins dysregulated independently of mRNA are prioritized, as they indicate proteome-level control.
+
+### Clinical Proteomics
+- Survival association using protein abundance
+- Covariate adjustment
+
+### Functional Validation Layer
+- Cross-reference with CRISPR dependency data
+- Evaluate essentiality in GBM models
 
 ---
-
-## 💬 Acknowledgements
-This project uses publicly available data and tools from:
-- **HackBio**
-- **Protein Data Bank (PDB)**
-- **SWISS-MODEL**
-- **AlphaFold**
-- **PyMOL**
+## Output
+A ranked set of proteostasis-associated proteins:
+- Dysregulated at the protein level
+- Clinically associated
+- Functionally essential
+- Mechanistically linked to stress adaptation
 
 ---
-
-## 📈 Current Status
-This project is **in progress**, with ongoing experimentation on multiple cancer subtypes.  
-Future iterations aim to integrate **multi-omics data** for improved biomarker prediction.
-
+## Proposed Experimental Validation
+- Targeted proteomics (PRM/SRM)
+- Protein stability assessment
+- Knockdown and stress-response assays
+- Drug perturbation experiments
 ---
